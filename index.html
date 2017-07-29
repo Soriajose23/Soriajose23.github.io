@@ -82,13 +82,14 @@
 					<a href="#" style="padding-top: 32px" class="w3-bar-item w3-button w3-right w3-mobile w3-hover-none w3-text-white w3-hover-text-green  w3-hide-medium w3-hide-small"><b>Location</b></a>
 					<a href="#" style="padding-top: 32px" class="w3-bar-item w3-button w3-right w3-mobile w3-hover-none w3-text-white w3-hover-text-green    w3-hide-medium w3-hide-small" ><b>About Us</b></a>
 					<a href="#" style="padding-top: 32px" class="w3-bar-item w3-button w3-right w3-mobile  w3-hover-none w3-text-white w3-hover-text-green  w3-hide-medium w3-hide-small" ><b>Home</b></a>
-					<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-large w3-xxlarge w3-hover-none" onclick="myFunction()">&#9776;</a>
-				</ul>
-				<div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-left">
-				  <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-none w3-hover-text-green">Home</a>
-				  <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-none w3-hover-text-green">About Us</a>
-				  <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-none w3-hover-text-green">Location</a>
+				</ul> <div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-right" style="display:none;right:0;" id="rightMenu">
+				  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+				  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+				  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+				  <a href="#" class="w3-bar-item w3-button">Link 3</a>
 				</div>
+				 <button class="w3-button w3-black w3-xlarge w3-right w3-hide-large" onclick="openRightMenu()">&#9776;</button>
+
 			</nav>
 		</div>
 	</header>
@@ -247,13 +248,11 @@ function showDivs(n) {
 
 <script>
 
-	function myFunction() {
-    var x = document.getElementById("demo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
+	function openRightMenu() {
+    document.getElementById("rightMenu").style.display = "block";
+}
+function closeRightMenu() {
+    document.getElementById("rightMenu").style.display = "none";
 }
 
    function loadMap() {
