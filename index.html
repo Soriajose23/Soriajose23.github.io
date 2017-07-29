@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="header">
+	<ul id="nav">
+		<li><a class="active" href="home">Home </a></li>
+		<li><a href="#CS">Services </a></li>
+		<li><a href="#CP">Projects</a></li>
+		<li><a href="#About">About Us</a></li>
+    <li style="float: right;"><a id="company_name">Carl T. Johnson Roofing</a></li>
+	</ul>
+</div>
+
+<div id="carousel" style="position: relative;">
+  <img class="mySlides" src="C:\Users\jsoria53\RoofingWebsite\img\roof1.png" style="width:100%">
+  <img class="mySlides" src="C:\Users\jsoria53\RoofingWebsite\img\roof3.png" style="width:100%">
+
+  <button id="left" onclick="plusDivs(-1)">&#10094;</button>
+  <button id="right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<div id="quote">
+	<h1>Overview</h1>
+	<p id="q" style="margin-left: 50px">Great things in business are never done by one person. They're are done by <br> a team of people. <button class="button" style="float: right; margin-right: 300px;">Learn More about us</button></p>
+</div>
+
+<div id="construction_services">
+  <h1>Services</h1>
+</div>
+
+<div id="featured_projects" style="background-color: #7E7F84">
+  <h1>Featured Projects</h1>
+ <div class="gallery">
+  <a target="_blank" href="img_fjords.jpg">
+    <img src="img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+</div>
+  <div id="Location">
+    <h1>Location</h1>
+    <address>
+       <img class="loc" src="C:\Users\jsoria53\RoofingWebsite\img\location.png" width="400" height="100">
+      680 E Hunter Street <br>
+      Logan, Ohio 43138 <br>
+      &#9742; (740) 385-5777 <br>
+      <i class="fa fa-envelope"></i> <a href="mailto:ctjinc2@gmail.com">ctjinc2@gmail.com</a>
+    </address>
+  </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+  	  x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
