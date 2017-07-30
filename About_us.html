@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src = "https://maps.googleapis.com/maps/api/js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Carl T. Johnson Inc.</title>
+
+	<style type="text/css">
+		.wrapper{
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+		#main_text {
+			text-align: justify;
+			text-justify: auto;
+			font-size: 15px;
+			font-family: Georgia;
+			text-indent: 40px;
+		}
+
+
+		h2 {
+			background: #6C9FDE;
+			color: #fff;
+			width: 200px;
+			text-align: center;
+			position: relative;
+			font-size: 20px;
+			top: -20px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+
+<body>
+	<header>
+		 <div id="top" class="w3-container" style="background-color: #2E2E2E">
+		 	<div class="w3-display-container">
+		 		<nav class="w3-bar">
+		 			<ul>
+		 				<img src="img/logo.PNG" class="w3-bar-item w3-mobile w3-hide-medium w3-hide-large" style="max-width: 235px">
+						<img src="img/logo.PNG" class="w3-bar-item w3-mobile w3-hide-small w3-image">
+		 				<a href="#" style="padding-top: 32px" class="w3-bar-item w3-button w3-right w3-mobile w3-hover-none w3-text-white w3-hover-text-green  w3-hide-medium w3-hide-small"><b>Location</b></a>
+						<a href="C:\Users\jsoria53\Soriajose23.github.io\About_us.html" style="padding-top: 32px" class="w3-bar-item w3-button w3-right w3-mobile w3-hover-none w3-text-white w3-hover-text-green    w3-hide-medium w3-hide-small" ><b>About Us</b></a>
+						<a href="C:\Users\jsoria53\Soriajose23.github.io\index.html" style="padding-top: 32px" class="w3-bar-item w3-button w3-right w3-mobile  w3-hover-none w3-text-white w3-hover-text-green  w3-hide-medium w3-hide-small" ><b>Home</b></a>
+		 			</ul>
+		 			<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-right" style="display:none;right:0;" id="rightMenu">
+				  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-dark-grey">Close &times;</button>
+				  <a href="C:\Users\jsoria53\Soriajose23.github.io\index.html" class="w3-bar-item w3-button w3-hover-green w3-border-bottom"><i class="fa fa-home">   Home</i></a>
+				  <a href="C:\Users\jsoria53\Soriajose23.github.io\About_us.html" class="w3-bar-item w3-button w3-hover-green w3-border-bottom"><i class="fa fa-users" aria-hidden="true">  About Us</i></a>
+				  <a href="#" class="w3-bar-item w3-button w3-hover-green w3-border-bottom"><i class="fa fa-map-marker" aria-hidden="true">  Location</i></a>
+				</div>
+				 <button class="w3-button w3-black w3-large w3-right w3-hide-large w3-card-4" onclick="openRightMenu()">&#9776;</button>
+		 		</nav>
+		 	</div>
+		 </div>
+	</header>
+
+	<div id="main_content" style="padding-top: 80px">
+		<div class="wrapper">
+			<div class="w3-card-4 w3-padding" style="background-color: #FAFAFA">
+			    <div class="w3-row w3-padding">
+			    	<div class="w3-half w3-padding">
+			    		 <img class="w3-card-4" src="img/thumb1.PNG" style="width: 100%; height:350px;max-height: 400px">
+			    		
+			    	</div>
+			    	<div id="our_story">
+			    	<section class="w3-half w3-card-4" style="margin-top: 30px; background-color: #F5F5F5">
+			    		<h2 class="w3-card-4 w3-padding">Our Story</h2>
+			    		<p class="w3-padding" id="main_text">Carl T. Johns Roofing Inc. specializes in installing, maitaining, and repairing commercial/residential roof systems. We use industry products that have a reputation for durablility and quality. Carl T. Johnson Inc. is also certified in several major roof systems. With over 70 years in business experience, you can rest assured that our company will do whatever it takes to meet your budget and goals. Our client's satisfaction is our number one priority. We look foward to doing business with you! Feel free to checkout our roofing photos below.>Carl T. Johns Roofing Inc. specializes in installing, maitaining, and repairing commercial/residential roof systems. We use industry products that have a reputation for durablility and quality. Carl T. Johnson Inc. is also certified in several major roof systems. With over 70 years in business experience, you can rest assured that our company will do whatever it takes to meet your budget and goals. Our client's satisfaction is our number one priority. We look foward to doing business with you! Feel free to checkout our roofing photos below.>Carl T. Johns Roofing Inc. specializes in installing, maitaining, and repairing commercial/residential roof systems. We use industry products that have a reputation for durablility and quality. Carl T. Johnson Inc. is also certified in several major roof systems. With over 70 years in business experience, you can rest assured that our company will do whatever it takes to meet your budget and goals. Our client's satisfaction is our number one priority. We look foward to doing business with you! Feel free to checkout our roofing photos below. </p> 
+			    	</section>
+			    </div>
+				
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function openRightMenu() {
+    document.getElementById("rightMenu").style.display = "block";
+}
+function closeRightMenu() {
+    document.getElementById("rightMenu").style.display = "none";
+}
+</script>
+
+
+
+</body>
+</html>
