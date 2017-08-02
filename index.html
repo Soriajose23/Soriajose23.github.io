@@ -32,41 +32,27 @@
 
 .wrapper {
 	width: 100%;
-	max-width: 960px;
+	max-width: 1300px;
 	margin: 0 auto;
 }
 
-#construction_services, #contact_us, #overview{
-	border-top: 1px solid #ccc;
-	padding-top: 30px;
-}
 
-#construction_services h2, #contact_us h2{
+#construction_services h2{
 	background: #6C9FDE;
 	color: #fff;
 	padding: 8px;
 	text-align: center;
 	width: 250px;
 	position: relative;
-	top: -50px;
 	margin:0 auto;
 	
 	font-size: 20px;
 }
 
-
-#overview h2 {
-	background: #6C9FDE;
-	color: #fff;
-	padding: 8px;
-	text-align: center;
-	width: 250px;
-	position: relative;
-	top: -30px;
-	margin:0 auto;
-	
-	font-size: 20px;
+#overview {
+	background-color: #00688B;
 }
+
 
 
 #contact_methods li {
@@ -85,6 +71,11 @@
 	text-indent: 40px;
 
 
+}
+
+
+#contact_us li {
+	color: white;
 }
 
 
@@ -120,13 +111,14 @@
 					They're are done by a team of people."</p>
 		</div>
 	</div>
-	<div id="main_content" style="padding-top: 80px; padding-bottom: 40px">
-		<div class="wrapper">
-		<section id="overview" class="w3-padding w3-card-4">
-			<h2 class="w3-card-4">Overview</h2>
-			<p>Carl T. Johns Roofing Inc. specializes in installing, maitaining, and repairing commercial/residential roof systems. We use industry products that have a reputation for durablility and quality. Carl T. Johnson Inc. is also certified in several major roof systems. With over 70 years in business experience, you can rest assured that our company will do whatever it takes to meet your budget and goals. Our client's satisfaction is our number one priority. We look foward to doing business with you! Feel free to checkout our roofing photos below. </p> 
-		<section id="construction_services" class="w3-padding w3-card-4" style="background-color: #778899">
-			<h2 class="w3-card-4">Roof Photo Galleries</h2>
+	<div id="main_content">
+		
+		<section id="overview" class="w3-card-4  w3-padding">
+			<h2>Overview</h2>
+			<p>Carl T. Johns Roofing Inc. specializes in installing, maintaining, and repairing commercial/residential roof systems. We use industry products that have a reputation for durablility and quality. Carl T. Johnson Inc. is also certified in several major roof systems. With over 70 years in business experience, you can rest assured that our company will do whatever it takes to meet your budget and goals. Our client's satisfaction is our number one priority. We look foward to doing business with you! Feel free to checkout our roofing photos below. </p> </section>
+	<div class="wrapper">
+		<section id="construction_services" class="w3-padding">
+			<h2>Roof Photo Galleries</h2>
 			<div class="w3-container ">
 			  <div class="w3-row w3-center">
 			    <a href="javascript:void(0)" onclick="openCity(event, 'Roofing');">
@@ -140,8 +132,7 @@
 			    </a>
 			  </div>
 
-			  <div id="Roofing" class="w3-container city">
-				<h4 style="text-align: center;">Metal Roof Gallary</h4>
+			  <div id="Roofing" class="w3-container city w3-padding">
 				<div class="w3-content w3-display-container w3-card-4" style="max-width: 800px; margin-bottom: 20px">
 				  <img class="mySlides" src="img/thumb1.PNG" style="width: 100%; height:350px;max-height: 400px">
 				  <img class="mySlides" src="img/thumb2.PNG" style="width: 100%; height: 350px;max-height: 400px">
@@ -183,10 +174,10 @@
 			  </div>
 			
 		</section>
-		
-		<section id="contact_us" style="margin-top: 50px; background-color: #4C95C8" class="w3-container w3-padding w3-card-4">
+		</div>
+		<section id="contact_us" style="margin-top: 20px; background-color: #332F2F" class="w3-container w3-padding w3-card-4">
 			<div class="w3-display-container">
-			<h2 id="jump" class="w3-card-4">Contact Us</h2>
+			<h2 id="jump" style="color: white">Contact Us</h2>
 			<div class="w3-row w3-padding">
 			<ul id="contact_methods" class="w3-third">
 				<li><span><i class="fa fa-map-marker" aria-hidden="true" style="padding-right: 10px"></i>680 E. Hunter Street</span>
@@ -196,7 +187,7 @@
 				<li><a href="mailto:ctjinc2@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="padding-right: 10px"></i>ctjinc2@gmail.com</a></li>
 			</ul>
 			  <div class="w3-third">
-			  	<h4>Office Hours<i class="fa fa-clock-o w3-xlarge" aria-hidden="true" style="padding-left: 10px"></i></h4>
+			  	<h4 style="color: white">Office Hours<i class="fa fa-clock-o w3-xlarge" aria-hidden="true" style="padding-left: 10px"></i></h4>
 			  	<ul id="office_hours">
 			  		<li>Monday-Thursday: 8 a.m. - 6 p.m.</li>
 			  		<li>Friday: 8 a.m. - 4 p.m.</li>
@@ -208,8 +199,7 @@
 			 </div>
 			 </div>
 		</section>
-		</section>
-	</div>
+	
 
 </div>
 <script>
