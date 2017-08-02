@@ -32,14 +32,15 @@
 
 .wrapper {
 	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	max-width: 1300px;
 	margin: 0 auto;
 }
 
 
 #construction_services h2{
-	background: #6C9FDE;
-	color: #fff;
+	color: black;
 	padding: 8px;
 	text-align: center;
 	width: 250px;
@@ -76,6 +77,10 @@
 
 #contact_us li {
 	color: white;
+}
+
+#Roofing {
+	padding-top: 30px;
 }
 
 
@@ -117,12 +122,12 @@
 			<h2>Overview</h2>
 			<p>Carl T. Johns Roofing Inc. specializes in installing, maintaining, and repairing commercial/residential roof systems. We use industry products that have a reputation for durablility and quality. Carl T. Johnson Inc. is also certified in several major roof systems. With over 70 years in business experience, you can rest assured that our company will do whatever it takes to meet your budget and goals. Our client's satisfaction is our number one priority. We look foward to doing business with you! Feel free to checkout our roofing photos below. </p> </section>
 	<div class="wrapper">
-		<section id="construction_services" class="w3-padding">
+		<section id="construction_services">
 			<h2>Roof Photo Galleries</h2>
 			<div class="w3-container ">
 			  <div class="w3-row w3-center">
 			    <a href="javascript:void(0)" onclick="openCity(event, 'Roofing');">
-			      <div class="w3-third tablink w3-bottombar w3-hover-grey w3-padding">Metal Roof<i class="fa fa-angle-double-down w3-hide-medium w3-hide-large" aria-hidden="true" style="padding-left: 25px"></i></div>
+			      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Metal Roof<i class="fa fa-angle-double-down w3-hide-medium w3-hide-large" aria-hidden="true" style="padding-left: 25px"></i></div>
 			    </a>
 			    <a href="javascript:void(0)" onclick="openCity(event, 'Gutters');">
 			      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Shingle Roof<i class="fa fa-angle-double-down w3-hide-medium w3-hide-large" aria-hidden="true" style="padding-left: 10px"></i></div>
@@ -132,7 +137,7 @@
 			    </a>
 			  </div>
 
-			  <div id="Roofing" class="w3-container city w3-padding">
+			  <div id="Roofing" class="w3-container city">
 				<div class="w3-content w3-display-container w3-card-4" style="max-width: 800px; margin-bottom: 20px">
 				  <img class="mySlides" src="img/thumb1.PNG" style="width: 100%; height:350px;max-height: 400px">
 				  <img class="mySlides" src="img/thumb2.PNG" style="width: 100%; height: 350px;max-height: 400px">
@@ -265,10 +270,10 @@ function openCity(evt, cityName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-green", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-border-red";
+  evt.currentTarget.firstElementChild.className += " w3-border-green";
 }
 </script>
 
