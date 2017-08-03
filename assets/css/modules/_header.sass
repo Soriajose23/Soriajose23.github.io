@@ -20,12 +20,26 @@
 	float: right
 	width: auto
 	.w3-bar-item
+		box-sizing: border-box
+		height: $header-height
 		min-width: 10rem
 		padding: 0 0.5rem
 		text-align: center
 		&:hover
 			cursor: pointer
 			font-weight: bold
+			border-bottom: 2px solid $black-1
 		a
 			font-size: 1.4rem
 			text-decoration: none
+	#ctj-mobile-nav
+		background-color: transparent
+		border: none
+		color: $black-1
+		font-size: 2rem
+		padding: 0 1rem
+		&:hover,
+		&:focus
+			outline: 0
+		&:active
+			color: #111
