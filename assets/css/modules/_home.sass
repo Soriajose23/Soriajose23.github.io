@@ -1,0 +1,50 @@
+.content-wrapper .w3-display-container
+	width: 100vw
+
+.ctj-splash-screen
+	background-image: url('../../img/pc.PNG')
+	background-repeat: no-repeat
+	background-size: 120%
+	background-position: -100px -40px
+	height: $splash-image-height
+.ctj-overview-wrapper
+	background-color: $blue-2
+	width: 100vw
+	.ctj-overview
+		color: $white-1
+		margin: 0 auto
+		max-width: $content-width
+		min-height: $overview-height
+		padding: 3.5rem 0
+		h2
+			letter-spacing: 0.1rem
+		p
+			padding: 1.6rem 0
+			font-size: 1.6rem
+			font-weight: lighter
+		.about-btn-wrapper
+			text-align: center
+			button
+				background-color: transparent
+				border: 1px solid $white-1
+				border-radius: 0.6rem
+				color: $white-1
+				font-size: 1.6rem			
+				font-weight: lighter
+				height: 5rem
+				letter-spacing: 1px
+				transition: 0.3s ease-in-out background-color, 0.3s ease-in-out color
+				width: 25rem
+				&:hover
+					background-color: $white-1
+					color: $blue-2
+					font-weight: normal
+					cursor: pointer
+
+// Media Queries
+@media screen and (max-width: $screen-medium)
+	.ctj-splash-screen
+		background-size: cover
+		background-position: initial
+	.ctj-overview-wrapper .ctj-overview
+		padding: 3.5rem 1.6rem

@@ -1,8 +1,16 @@
 // Height Variables
 $header-height: 8.0rem
-$footer-height: 6.0rem
+$footer-height: 10rem
 $total-margin-height: calc(#{$header-height} + #{$footer-height})
+$overview-height: 27.5rem
+$splash-image-height: calc(100vh - calc(#{$header-height} + #{$overview-height}))
 
 // Content Variables
-$content-width: 96.0rem
-$content-height: calc(100vh - #{$total-margin-height})
+$content-width: 120rem
+$content-height: calc(100vh - #{$header-height})
+
+// Screen Breaks
+$screen-large: 1200px
+$screen-medium: 996px
+$screen-small: 768px
+$screen-x-small: 375px

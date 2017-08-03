@@ -1,8 +1,31 @@
 .ctj-header
-	background-color: red
+	background-color: $white-1
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.3)
+	color: $black-1
 	height: $header-height
 	line-height: $header-height
 	position: fixed
 	top: 0
 	left: 0
 	width: 100vw
+	z-index: 999
+	.w3-display-container
+		margin: 0 auto
+		max-width: $content-width
+		h3
+			float: left
+			width: auto
+
+.ctj-nav
+	float: right
+	width: auto
+	.w3-bar-item
+		min-width: 10rem
+		padding: 0 0.5rem
+		text-align: center
+		&:hover
+			cursor: pointer
+			font-weight: bold
+		a
+			font-size: 1.4rem
+			text-decoration: none
