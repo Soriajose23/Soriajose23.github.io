@@ -1,5 +1,5 @@
 <div class="w3-display-container">
-	<div class="ctj-splash-screen">
+	<section class="ctj-splash-screen">
 		<div class="splash-content-wrapper">
 			<div class="blurb">
 				<span>"Great things in business are never done by one</span>
@@ -9,8 +9,8 @@
 				<img id="bbb-logo" src="../../img/bbb-logo-A-rating.png">
 			</a>
 		</div>
-	</div>
-	<div class="ctj-overview-wrapper">
+	</section>
+	<section class="ctj-overview-wrapper">
 		<div class="ctj-overview">
 			<h2>Overview</h2>
 			<div class="overview-wrapper">
@@ -24,5 +24,117 @@
 				</button>
 			</div>
 		</div>
-	</div>
+	</section>
+	<!-- Make this a incude of some kind -->
+	<section class="ctj-roofing-services">
+		<h2>Roof Photo Galleries</h2>
+		<div class="w3-container ">
+			<div class="w3-row w3-center">
+				<a href="javascript:void(0)" onclick="openCity(event, 'Roofing');">
+					<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
+						Metal Roof
+						<i class="fa fa-angle-double-down w3-hide-medium w3-hide-large" aria-hidden="true" style="padding-left: 25px"></i>
+					</div>
+				</a>
+				<a href="javascript:void(0)" onclick="openCity(event, 'Gutters');">
+					<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
+						Shingle Roof
+						<i class="fa fa-angle-double-down w3-hide-medium w3-hide-large" aria-hidden="true" style="padding-left: 10px"></i>
+					</div>
+				</a>
+				<a href="javascript:void(0)" onclick="openCity(event, 'Siding');">
+					<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
+						Rubber Roof
+						<i class="fa fa-angle-double-down w3-hide-medium w3-hide-large" aria-hidden="true" style="padding-left: 10px"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="Roofing" class="w3-container city">
+			<div class="w3-container">
+				<h2>Slideshow Caption</h2>
+				<p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
+			</div>
+			<div class="w3-display-container">
+				<img class="metal" src="img/pc.PNG" style="width:100%; height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="metal" src="img/pic2.jpg" style="width:100%; height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="metal" src="img/thumb1.PNG" style="width:100%;height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="metal" src="img/thumb2.PNG" style="width:100%;height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="metal" src="img/pic2.jpg" style="width:100%; height: 450px; overflow: hidden">
+			</div>
+			<p>
+				<button onclick="myshow1.previous()">Previous</button>
+				<button onclick="myshow1.next()">Next</button>
+			</p>
+		</div>
+		<div id="Gutters" class="w3-container city" style="display:none">
+			<div class="w3-container">
+				<h2>Slideshow Caption</h2>
+				<p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
+			</div>
+			<div class="w3-display-container">
+				<img class="shingle" src="img/pc.PNG" style="width:100%; height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="shingle" src="img/pic2.jpg" style="width:100%; height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="shingle" src="img/thumb1.PNG" style="width:100%;height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="shingle" src="img/thumb2.PNG" style="width:100%;height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="shingle" src="img/pic2.jpg" style="width:100%; height: 450px; overflow: hidden">
+			</div>
+			<p>
+				<button onclick="myshow2.previous()">Previous</button>
+				<button onclick="myshow2.next()">Next</button>
+			</p>
+		</div>
+		<div id="Siding" class="w3-container city" style="display:none">
+			<div class="w3-container">
+				<h2>Slideshow Caption</h2>
+				<p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
+			</div>
+			<div class="w3-display-container">
+				<img class="rubber" src="img/pc.PNG" style="width:100%; height: 450px; overflow: hidden">
+			</div>
+			<div class="w3-display-container">
+				<img class="rubber" src="img/pic2.jpg" style="width:100%; height: 450px; overflow: hidden">
+			</div>
+			<div class="w3-display-container">
+				<img class="rubber" src="img/thumb1.PNG" style="width:100%;height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="rubber" src="img/thumb2.PNG" style="width:100%;height: 450px; overflow: hidden">
+			</div>
+
+			<div class="w3-display-container">
+				<img class="rubber" src="img/pic2.jpg" style="width:100%; height: 450px; overflow: hidden">
+			</div>
+
+			<p>
+				<button onclick="myshow3.previous()">Previous</button>
+				<button onclick="myshow3.next()">Next</button>
+			</p>
+		</div>
+	</section>
 </div>
