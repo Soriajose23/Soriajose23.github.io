@@ -7,6 +7,23 @@
 				<li class="w3-bar-item w3-mobile w3-hide-small"><a href="#">About</a></li>
 				<li class="w3-bar-item w3-mobile w3-hide-small"><a href="#">Contact</a></li>
 			</ul>
+			<div class="w3-sidebar w3-bar-block w3-card-4 w3-animate-right" style="display:none; right:0;" id="rightMenu">
+				<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-dark-grey">Close &times;</button>
+				<a href="#" class="w3-bar-item w3-button w3-hover-green w3-border-bottom">
+					<i class="fa fa-home" aria-hidden="true" style="padding-right: 12px"></i>
+					Home
+				</a>
+				<a href="#" class="w3-bar-item w3-button w3-hover-green w3-border-bottom">
+					<i class="fa fa-users" aria-hidden="true" style="padding-right: 10px"></i>
+					About Us
+				</a>
+				<a href="#" class="w3-bar-item w3-button w3-hover-green w3-border-bottom">
+					<i class="fa fa-map-marker" aria-hidden="true" style="padding-right: 16px"></i>
+					Contact Us
+				</a>
+			</div>
+			<!-- Mobile Navigation Button -->
+			<button id="ctj-mobile-nav" class="w3-right w3-hide-medium w3-hide-large" onclick="openRightMenu()">&#9776;</button>
 		</nav>
 	</div>
 </header>

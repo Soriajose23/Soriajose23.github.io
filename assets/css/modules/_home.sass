@@ -2,26 +2,43 @@
 	width: 100vw
 
 .ctj-splash-screen
-	background-image: url('../../img/pc.PNG')
+	align-items: center
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(../../img/pc.PNG)
 	background-repeat: no-repeat
 	background-size: 120%
 	background-position: -100px -40px
+	display: flex
 	height: $splash-image-height
+	justify-content: center
+	.blurb
+		color: $white-1
+		padding: 0.5rem 1rem
+		span
+			font-size: 2.4rem
+			font-weight: 300
+			line-height: 3rem
+			letter-spacing: 0.1rem
+		span:last-child
+			display: block
 .ctj-overview-wrapper
 	background-color: $blue-2
 	width: 100vw
 	.ctj-overview
 		color: $white-1
 		margin: 0 auto
-		max-width: $content-width
+		max-width: $overview-width
 		min-height: $overview-height
 		padding: 3.5rem 0
 		h2
 			letter-spacing: 0.1rem
+			text-align: center
 		p
-			padding: 1.6rem 0
+			padding: 3.6rem 0
 			font-size: 1.6rem
 			font-weight: lighter
+			line-height: 2.5rem
+			letter-spacing: 0.04rem
+			text-align: center
 		.about-btn-wrapper
 			text-align: center
 			button
@@ -40,13 +57,23 @@
 					color: $blue-2
 					font-weight: normal
 					cursor: pointer
+				&:focus
+					outline: 0
 
 // Media Queries
 @media screen and (max-width: $screen-large)
 	.ctj-overview-wrapper .ctj-overview
-		padding: 3.5rem 1.6rem
+		padding: 3.5rem $screen-break-padding
 
 @media screen and (max-width: $screen-medium)
 	.ctj-splash-screen
 		background-size: cover
 		background-position: initial
+
+@media screen and (max-width: $screen-small)
+	.ctj-splash-screen .blurb
+		span
+			font-size: 1.8rem
+			line-height: 2.4rem
+		span:last-child
+			display: inline
