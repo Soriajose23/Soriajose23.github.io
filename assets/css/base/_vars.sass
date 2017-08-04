@@ -4,7 +4,8 @@ $footer-height: 10rem
 $total-margin-height: calc(#{$header-height} + #{$footer-height})
 $overview-height: 27.5rem
 $overview-width: 70rem
-$splash-image-height: calc(100vh - calc(#{$header-height} + #{$overview-height}))
+// NOTE: nested calcs don't work in edge
+$splash-image-height: calc(100vh - (#{$header-height} + #{$overview-height}))
 
 // Content Variables
 $content-width: 120rem
