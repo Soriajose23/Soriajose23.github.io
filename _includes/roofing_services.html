@@ -3,120 +3,56 @@
 	<h2>Roof Photo Galleries</h2>
 	<div class="w3-container ">
 		<div class="w3-row w3-center">
-			<a>
-				<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-					Metal Roof
-					<i class="fa fa-angle-double-down w3-hide-medium w3-hide-large" aria-hidden="true" style="padding-left: 25px"></i>
-				</div>
-			</a>
-			<a>
-				<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-					Shingle Roof
-					<i class="fa fa-angle-double-down w3-hide-medium w3-hide-large" aria-hidden="true" style="padding-left: 10px"></i>
-				</div>
-			</a>
-			<a>
-				<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">
-					Rubber Roof
-					<i class="fa fa-angle-double-down w3-hide-medium w3-hide-large" aria-hidden="true" style="padding-left: 10px"></i>
-				</div>
-			</a>
+			<button data-carouselNum="0" class="w3-third tablink w3-padding carousel-tab active" onclick="activateCarousel(this, 0)">
+				<h3>Metal Roof</h3>
+			</button>
+			<button data-carouselNum="1" class="w3-third tablink w3-padding carousel-tab" onclick="activateCarousel(this, 1)">
+				<h3>Shingle Roof</h3>
+			</button>
+			<button data-carouselNum="2" class="w3-third tablink w3-padding carousel-tab" onclick="activateCarousel(this, 2)">
+				<h3>Rubber Roof</h3>
+			</button>
 		</div>
+	</div>
+	
+	<!--				 		 -->
+	<!-- Actual Carousel Content -->
+	<!--				 	  	 -->
+	<div class="w3-container">
+		<h3>Slideshow Caption</h3>
+		<p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
 	</div>
 
 	<div class="ctj-carousel-container">
-		<div class="ctj-carousel">
-			<span class="btn-container">
-				<button>Previous</button>
-				<button>Next</button>
-			</span>
+		<div class="ctj-carousel carousel-on" id="carousel-metal-roof">
+			<!-- LOAD CAROUSEL INCLUDE -->
+			{% include carousels/carousel-metal-roof.html %}
+			<div class="btn-container-wrapper">
+				<span class="btn-container">
+					<button onclick="carouselSlidePrevious(carousel_metal_roof)">Previous</button>
+					<button onclick="carouselSlideNext(carousel_metal_roof)">Next</button>
+				</span>
+			</div>
+		</div>
+		<div class="ctj-carousel carousel-off" id="carousel-shingle-roof">
+			<!-- LOAD CAROUSEL INCLUDE -->
+			{% include carousels/carousel-shingle-roof.html %}
+			<div class="btn-container-wrapper">
+				<span class="btn-container">
+					<button onclick="carouselSlidePrevious(carousel_shingle_roof)">Previous</button>
+					<button onclick="carouselSlideNext(carousel_shingle_roof)">Next</button>
+				</span>
+			</div>
+		</div>
+		<div class="ctj-carousel carousel-off" id="carousel-rubber-roof">
+			<!-- LOAD CAROUSEL INCLUDE -->
+			{% include carousels/carousel-rubber-roof.html %}
+			<div class="btn-container-wrapper">
+				<span class="btn-container">
+					<button onclick="carouselSlidePrevious(carousel_rubber_roof)">Previous</button>
+					<button onclick="carouselSlideNext(carousel_rubber_roof)">Next</button>
+				</span>
+			</div>
 		</div>
 	</div>
-
-<!-- 	<div id="Roofing" class="w3-container city">
-		<div class="w3-container">
-			<h3>Slideshow Caption</h3>
-			<p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
-		</div>
-		<div class="w3-display-container">
-			<img class="metal" src="img/pc.PNG">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="metal" src="img/pic2.jpg">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="metal" src="img/thumb1.PNG">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="metal" src="img/thumb2.PNG">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="metal" src="img/pic2.jpg">
-		</div>
-		<span class="btn-container">
-			<button onclick="myshow1.previous()">Previous</button>
-			<button onclick="myshow1.next()">Next</button>
-		</span>
-	</div>
-	<div id="Gutters" class="w3-container city" style="display:none">
-		<div class="w3-container">
-			<h3>Slideshow Caption</h3>
-			<p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
-		</div>
-		<div class="w3-display-container">
-			<img class="shingle" src="img/pc.PNG">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="shingle" src="img/pic2.jpg">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="shingle" src="img/thumb1.PNG">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="shingle" src="img/thumb2.PNG">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="shingle" src="img/pic2.jpg">
-		</div>
-		<span class="btn-container">
-			<button onclick="myshow2.previous()">Previous</button>
-			<button onclick="myshow2.next()">Next</button>
-		</span>
-	</div>
-	<div id="Siding" class="w3-container city" style="display:none">
-		<div class="w3-container">
-			<h3>Slideshow Caption</h3>
-			<p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
-		</div>
-		<div class="w3-display-container">
-			<img class="rubber" src="img/pc.PNG">
-		</div>
-		<div class="w3-display-container">
-			<img class="rubber" src="img/pic2.jpg">
-		</div>
-		<div class="w3-display-container">
-			<img class="rubber" src="img/thumb1.PNG">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="rubber" src="img/thumb2.PNG">
-		</div>
-
-		<div class="w3-display-container">
-			<img class="rubber" src="img/pic2.jpg">
-		</div>
-
-		<span class="btn-container">
-			<button onclick="myshow3.previous()">Previous</button>
-			<button onclick="myshow3.next()">Next</button>
-		</span>
-	</div> -->
 </section>
