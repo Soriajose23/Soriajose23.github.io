@@ -7,6 +7,8 @@ function closeRightMenu() {
 }
 
 
+loadMap();
+
 function loadMap() {
 
 	var mapOptions = {
@@ -20,3 +22,4 @@ function loadMap() {
 	   map: map,
 	});
 }
+
