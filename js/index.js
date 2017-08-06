@@ -80,3 +80,4 @@ function closeRightMenu() {
 // 	document.getElementById(cityName).style.display = "block";
 // 	evt.currentTarget.firstElementChild.className += " w3-border-green";
 // }
+
