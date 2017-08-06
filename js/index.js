@@ -1,3 +1,7 @@
+(function () {
+	loadMap();
+})();
+
 function openRightMenu() {
     document.getElementById("right-menu").style.display = "block";
 }
@@ -6,11 +10,7 @@ function closeRightMenu() {
     document.getElementById("right-menu").style.display = "none";
 }
 
-
-loadMap();
-
 function loadMap() {
-
 	var mapOptions = {
 	   center:new google.maps.LatLng(39.5411164,-82.3972868), zoom:12,
 	   mapTypeId:google.maps.MapTypeId.ROADMAP
@@ -22,4 +22,3 @@ function loadMap() {
 	   map: map,
 	});
 }
-
