@@ -14,6 +14,10 @@ var carousel_metal_roof = {
 	CAROUSELS = [ carousel_metal_roof, carousel_shingle_roof, carousel_rubber_roof ],
 	CAROUSEL_TABS = document.getElementsByClassName('carousel-tab');
 
+(function () {
+	loadMap();
+})();
+
 function activateCarousel(el, num) {
 	// Set Tab
 	console.log(CAROUSEL_TABS[ACTIVATED_CAROUSEL], el);
@@ -63,20 +67,15 @@ function closeRightMenu() {
     document.getElementById("right-menu").style.display = "none";
 }
 
-// myshow1 = w3.slideshow(".metal", 0);
-// myshow2 = w3.slideshow(".shingle", 0);
-// myshow3 = w3.slideshow(".rubber", 0);
-
-// function openCity(evt, cityName) {
-// 	var i, x, tablinks;
-// 	x = document.getElementsByClassName("city");
-// 	for (i = 0; i < x.length; i++) {
-// 		x[i].style.display = "none";
-// 	}
-// 	tablinks = document.getElementsByClassName("tablink");
-// 	for (i = 0; i < x.length; i++) {
-// 		tablinks[i].className = tablinks[i].className.replace(" w3-border-green", "");
-// 	}
-// 	document.getElementById(cityName).style.display = "block";
-// 	evt.currentTarget.firstElementChild.className += " w3-border-green";
-// }
+function loadMap() {
+	var mapOptions = {
+	   center:new google.maps.LatLng(39.5411164,-82.3972868), zoom:12,
+	   mapTypeId:google.maps.MapTypeId.ROADMAP
+	};
+		
+	var map = new google.maps.Map(document.getElementById("sample"),mapOptions);
+	 var marker = new google.maps.Marker({
+	   position: new google.maps.LatLng(39.5411164,-82.3972868),
+	   map: map,
+	});
+}
