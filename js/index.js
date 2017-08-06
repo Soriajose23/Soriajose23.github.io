@@ -61,9 +61,6 @@ function openRightMenu() {
 
 function closeRightMenu() {
     document.getElementById("right-menu").style.display = "none";
-<<<<<<< HEAD
-}
-=======
 }
 
 // myshow1 = w3.slideshow(".metal", 0);
@@ -83,5 +80,3 @@ function closeRightMenu() {
 // 	document.getElementById(cityName).style.display = "block";
 // 	evt.currentTarget.firstElementChild.className += " w3-border-green";
 // }
-
->>>>>>> b7bbae4e4ca5b19d40408cff9fab81e598a9480e
