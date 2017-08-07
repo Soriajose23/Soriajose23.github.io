@@ -3,21 +3,44 @@
 		<h3>Carl T. Johnson Roofing Inc.</h3>
 		<nav class="w3-bar ctj-nav">
 			<ul class="site-nav">
-				<li class="w3-bar-item w3-mobile w3-hide-small"><a href="#">Home</a></li>
-				<li class="w3-bar-item w3-mobile w3-hide-small"><a href="#">About</a></li>
-				<li class="w3-bar-item w3-mobile w3-hide-small"><a href="#jump">Contact</a></li>
+				<a href="/">
+					<li class="w3-bar-item w3-mobile w3-hide-small">
+						Home
+					</li>
+				</a>
+				<a href="#services">
+					<li class="w3-bar-item w3-mobile w3-hide-small">
+						Services
+					</li>
+				</a>
+				<a href="/about">
+					<li class="w3-bar-item w3-mobile w3-hide-small">
+						About
+					</li>
+				</a>
+				<a href="#contact">
+					<li class="w3-bar-item w3-mobile w3-hide-small">
+						Contact
+					</li>
+				</a>
 			</ul>
 			<div class="w3-sidebar w3-bar-block w3-card-4 w3-animate-right" style="display:none; right:0;" id="right-menu">
-				<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+				<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">
+					Close <i class="fa fa-times" aria-hidden></i>
+				</button>
 				<a href="#" class="w3-bar-item w3-button">
 					<i class="fa fa-home" aria-hidden="true" style="padding-right: 12px"></i>
 					Home
+				</a>
+				<a href="#services" class="w3-bar-item w3-button">
+					<i class="fa fa-info-circle" aria-hidden="true" style="padding-right: 10px"></i>
+					Services
 				</a>
 				<a href="#" class="w3-bar-item w3-button">
 					<i class="fa fa-users" aria-hidden="true" style="padding-right: 10px"></i>
 					About Us
 				</a>
-				<a href="#jump" class="w3-bar-item w3-button">
+				<a href="#contact" class="w3-bar-item w3-button">
 					<i class="fa fa-map-marker" aria-hidden="true" style="padding-right: 16px"></i>
 					Contact Us
 				</a>
