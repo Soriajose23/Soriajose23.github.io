@@ -18,10 +18,10 @@ var carousel_metal_roof = {
 var lastScrollTop = 0;
 
 // Call functions
-(function () {
+window.onload = function () {
 	loadMap();
 	setWindowScrollEvent();
-})();
+}
 
 /*************
 *  Functions *
@@ -99,7 +99,6 @@ function handleHeader() {
 	var header = document.getElementById("ctj-header");
 	var contact_header = document.getElementById("ctj-contact-header");
 	if(currentScrollTop > lastScrollTop) {
-		console.log("scrolling down");
 		// Downward scroll
 		if(currentScrollTop > contact_header.offsetHeight) {
 			header.classList.add('ctj-header-hide');
