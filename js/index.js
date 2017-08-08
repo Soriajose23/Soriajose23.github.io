@@ -1,3 +1,4 @@
+// Variables
 var ACTIVATED_CAROUSEL = 0;
 var carousel_metal_roof = {
 		element: document.getElementById("carousel-metal-roof"),
@@ -14,10 +15,17 @@ var carousel_metal_roof = {
 	CAROUSELS = [ carousel_metal_roof, carousel_shingle_roof, carousel_rubber_roof ],
 	CAROUSEL_TABS = document.getElementsByClassName('carousel-tab');
 
+var lastScrollTop = 0;
+
+// Call functions
 (function () {
 	loadMap();
+	setWindowScrollEvent();
 })();
 
+/*************
+*  Functions *
+*************/
 function activateCarousel(el, num) {
 	// Set Tab
 	console.log(CAROUSEL_TABS[ACTIVATED_CAROUSEL], el);
@@ -78,4 +86,30 @@ function loadMap() {
 	   position: new google.maps.LatLng(39.5411164,-82.3972868),
 	   map: map,
 	});
+}
+
+function setWindowScrollEvent() {
+	window.addEventListener("scroll", function () {
+		handleHeader();
+	}, false);
+}
+
+function handleHeader() {
+	var currentScrollTop = window.pageYOffset || document.body.scrollTop;
+	var header = document.getElementById("ctj-header");
+	var contact_header = document.getElementById("ctj-contact-header");
+	if(currentScrollTop > lastScrollTop) {
+		console.log("scrolling down");
+		// Downward scroll
+		if(currentScrollTop > contact_header.offsetHeight) {
+			header.classList.add('ctj-header-hide');
+		}
+	} else {
+		// Upwards Scroll
+		// if(currentScrollTop < contact)
+		if(header.classList.contains('ctj-header-hide') || lastScrollTop == 0) {
+			header.classList.remove('ctj-header-hide');
+		}
+	}
+	lastScrollTop = currentScrollTop;
 }

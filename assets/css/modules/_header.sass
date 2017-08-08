@@ -1,19 +1,39 @@
+.ctj-header-hide
+	top: (-$contact-us-height) !important
 .ctj-header
 	background-color: $white-1
 	box-shadow: 2px 2px 10px rgba(0,0,0,0.3)
 	color: $black-1
 	height: $header-height
-	line-height: $header-height
 	position: fixed
-	top: 0
 	left: 0
+	top: 0
+	transition: 0.3s ease-in-out top
 	width: 100vw
 	z-index: 999
+	.ctj-contact-header
+		background-color: $red-1
+		color: $white-1
+		height: $contact-us-height
+		line-height: $contact-us-height
+		margin: 0 -1.6rem
+		text-align: center
+	#phone-number
+		font-weight: bold
+		padding-left: 1.2rem
 	.w3-display-container
 		margin: 0 auto
 		max-width: $content-width
+		height: $header-nav-height
+		line-height: $header-nav-height
+		a
+			float: left
+		a,
+		.ctj-svg
+			height: $header-nav-height
+			display: inline-block
 		.ctj-svg #ctj-logo1
-			height: $header-height
+			height: $header-nav-height
 			padding: 1.2rem 0
 			transition: 0.4s ease-in-out fill
 			&:hover
@@ -28,7 +48,7 @@
 	.w3-bar-item
 		box-sizing: border-box
 		font-size: 1.4rem
-		height: $header-height
+		height: $header-nav-height
 		letter-spacing: 0.1rem
 		min-width: 10rem
 		padding: 0 0.5rem
